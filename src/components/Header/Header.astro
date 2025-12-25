@@ -1,35 +1,29 @@
 ---
-import "../../styles/stars.css";
 import Links from "../Links/Links.astro";
+import Title from "../UI/Title.astro";
+import { PERSONAL_INFO } from "../../data/personal";
 ---
 
-<header id="home" class="relative h-screen overflow-hidden bg-gray-950">
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
-
-  <main
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
-  >
-    <h1
-      class="text-4xl md:text-8xl font-bold mb-6 text-shadow-purple"
-      data-aos="fade-up"
-    >
-      Hi, I'm Jhon Doe
-    </h1>
+<header
+  id="home"
+  class="relative h-screen flex flex-col items-center justify-center text-center px-4"
+>
+  <main class="relative z-10 flex flex-col items-center">
+    <Title level={1} animate={true}>
+      Hi, I'm {PERSONAL_INFO.name}
+    </Title>
     <p
       class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-medium"
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      I'm a passionate developer with a strong background in web development and
-      a deep love for creating innovative and user-friendly applications.
+      {PERSONAL_INFO.heroDescription}
     </p>
     <div data-aos="fade-up" data-aos-delay="400">
       <Links />
     </div>
     <a
-      href="/"
+      href={PERSONAL_INFO.resumeUrl}
       class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
       drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
       data-aos="fade-up"
@@ -38,13 +32,4 @@ import Links from "../Links/Links.astro";
       Resume
     </a>
   </main>
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
 </header>
-
-<style>
-  .text-shadow-purple {
-    text-shadow: 2px 2px 0 #870deb;
-  }
-</style>
