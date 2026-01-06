@@ -8,5 +8,11 @@ export default defineConfig({
   integrations: [icon()],
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+	server: {
+		allowedHosts:[
+			'aaronhu.dev'
+		],
+	},
+
 });
