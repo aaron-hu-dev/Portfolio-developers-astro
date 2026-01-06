@@ -8,11 +8,11 @@ export const PERSONAL_INFO = {
     resumeUrl: "/",
     socialLinks: [
         {
-            href: "https://www.linkedin.com/",
+            href: "https://www.linkedin.com/in/aaron-hu-dev/",
             label: "LinkedIn",
         },
-        { href: "https://github.com/", label: "GitHub" },
-        { href: "https://x.com/", label: "Twitter" },
-        { href: "mailto:example@gmail.com", label: "Email" },
+        { href: "https://github.com/aaron-hu-dev", label: "GitHub" },
+        // { href: "https://x.com/", label: "Twitter" },
+        { href: "mailto:aaron@aaronhu.dev", label: "Email" },
     ],
 };
