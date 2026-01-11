@@ -13,6 +13,7 @@ export const PERSONAL_INFO = {
             icon: "linkedin",
         },
         { href: "https://github.com/aaron-hu-dev", label: "GitHub", icon: "github" },
-        { href: "mailto:aaron@aaronhu.dev", label: "Email", icon: "mail" },
+        { href: "tel:0432819560", label: "0432 819 560", icon: "smartphone" },
+        { href: "mailto:aaron@aaronhu.dev", label: "aaron@aaronhu.dev", icon: "mail" },
     ],
 };
